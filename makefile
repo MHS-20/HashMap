@@ -4,7 +4,7 @@ DBGFLAGS= -g3 -fsanitize=address,undefined
 LDFLAGS = -lm
 
 TARGET  = hashmap
-SRC     = hash_map.c prime.c main.c
+SRC     = src/hash_map.c src/prime.c src/main.c
 OBJ     = $(SRC:.c=.o)
 
 .PHONY: all
